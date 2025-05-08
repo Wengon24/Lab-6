@@ -35,7 +35,7 @@ watch(question, async (newQuestion, oldQuestion) => {
     <input v-model="question" :disabled="loading" />
   </p>
   <p>{{ answer }}</p>
-  <p v-if="imageUrl">
-    <img :src="imageUrl"/>
-  </p>
+
+    <img :src="imageUrl" v-if="imageUrl" alt=""/>
+    
 </template>
