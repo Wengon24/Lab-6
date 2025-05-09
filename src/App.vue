@@ -1,7 +1,7 @@
 <script setup>
 
-import Counter from '@/components/Counter.vue'
-import Question from '@/components/Question.vue'
+import ChatApp from './views/ChatApp.vue'
+
 
 function mostrarMensaje(msg){
 
@@ -13,10 +13,9 @@ function mostrarMensaje(msg){
 
 <template>
 
-  <h1>Mi contador</h1>
 
-  <Counter :value="15" @send="mostrarMensaje" />
+  <ChatApp />
 
-  <Question />
+  
 
 </template>
